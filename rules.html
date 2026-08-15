@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>야구 기초 규칙 — 야구 첫걸음</title>
+    <meta
+      name="description"
+      content="이닝과 공수교대, 포지션 9자리, 볼카운트, 주자와 득점, 전광판 읽는 법까지. 직접 눌러보며 익히는 야구 기초 규칙."
+    />
+    <meta name="theme-color" content="#041e42" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='11' fill='%23fff'/><path d='M5.5 4.5Q9 12 5.5 19.5M18.5 4.5Q15 12 18.5 19.5' stroke='%23d00f31' stroke-width='1.6' fill='none'/></svg>"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+    <div class="progress-bar" data-progress></div>
+
+    <header class="site-header">
+      <div class="site-header__bar">
+        <a class="site-header__logo" href="index.html">
+          <svg class="site-header__ball" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="11" fill="#fff" />
+            <path
+              d="M5.5 4.5Q9 12 5.5 19.5M18.5 4.5Q15 12 18.5 19.5"
+              stroke="#d00f31"
+              stroke-width="1.6"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+          야구 첫걸음
+        </a>
+        <button
+          class="site-nav__toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          메뉴
+        </button>
+        <nav class="site-nav" id="site-nav" data-nav aria-label="주요 메뉴">
+          <ul class="site-nav__list">
+            <li><a href="rules.html">규칙</a></li>
+            <li><a href="kbo.html">KBO 리그</a></li>
+            <li><a href="lotte.html">롯데</a></li>
+            <li><a href="jamsil.html">직관 가이드</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="page-head">
+        <div class="wrap">
+          <span class="page-head__step">1단계</span>
+          <h1>야구 기초 규칙</h1>
+          <p class="page-head__lead">
+            야구는 규칙이 많아 보이지만, 경기를 보는 데 필요한 건 생각보다 적습니다. 아래
+            시뮬레이터를 직접 눌러보면서 감각을 익혀 보세요.
+          </p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <nav class="toc" aria-label="목차">
+          <h2>이 페이지에서 다루는 것</h2>
+          <ol>
+            <li><a href="#structure">경기가 굴러가는 구조</a></li>
+            <li><a href="#positions">수비 9자리</a></li>
+            <li><a href="#count">투수와 타자의 싸움</a></li>
+            <li><a href="#runners">주자와 득점</a></li>
+            <li><a href="#outs">아웃되는 방법</a></li>
+            <li><a href="#scoreboard">전광판 읽는 법</a></li>
+            <li><a href="#confusing">헷갈리는 규칙</a></li>
+            <li><a href="#stats">최소한의 기록 용어</a></li>
+          </ol>
+        </nav>
+
+        <!-- 1. 구조 -->
+        <section id="structure">
+          <h2>경기가 굴러가는 구조</h2>
+          <p>
+            야구는 축구나 농구와 달리 <strong>시간이 아니라 횟수로 끝나는 경기</strong>입니다.
+            정해진 시간이 없고, 정해진 만큼의 공격 기회를 다 쓰면 끝납니다.
+          </p>
+
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>이닝, 그리고 초와 말</h3>
+              <p>
+                한 이닝은 두 팀이 한 번씩 공격을 주고받는 묶음입니다. 앞부분을
+                <strong>초</strong>, 뒷부분을 <strong>말</strong>이라고 부릅니다.
+              </p>
+              <p>
+                <strong>원정팀이 초에, 홈팀이 말에</strong> 공격합니다. 8월 22일 잠실은 두산의
+                홈구장이므로, 롯데가 1회초에 먼저 공격을 시작합니다.
+              </p>
+            </div>
+            <div class="card">
+              <h3>9이닝, 그리고 연장</h3>
+              <p>
+                기본은 9이닝입니다. 9회까지 마쳤는데 동점이면 연장전에 들어갑니다. KBO 정규시즌은
+                보통 12회까지 하고, 그래도 동점이면 무승부로 끝납니다.
+              </p>
+              <p>
+                반대로 홈팀이 9회초까지 이기고 있다면 9회말 공격은 하지 않고 그대로 끝납니다.
+                이길 팀이 이미 정해졌기 때문입니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="callout">
+            <span class="callout__title">공수교대는 아웃 3개로 일어난다</span>
+            <p>
+              공격 팀이 아웃 3개를 당하면 즉시 공격이 끝나고 두 팀이 역할을 바꿉니다. 만루에
+              주자가 꽉 차 있어도, 3아웃이 되는 순간 그 주자들은 아무 의미 없이 사라집니다.
+              그래서 <strong>2아웃 이후의 공격이 가장 조마조마</strong>합니다.
+            </p>
+          </div>
+        </section>
+
+        <!-- 2. 포지션 -->
+        <section id="positions">
+          <h2>수비 9자리</h2>
+          <p>
+            수비 팀은 9명이 그라운드에 나갑니다. 자리마다 번호가 정해져 있고, 이 번호는 기록지에
+            그대로 쓰입니다. <strong>아래 그림에서 동그라미를 눌러보세요.</strong>
+          </p>
+
+          <div class="diamond" data-diamond>
+            <div class="diamond__field">
+              <svg
+                class="diamond__svg"
+                viewBox="0 0 400 400"
+                role="img"
+                aria-label="야구장 수비 포지션 배치도. 각 포지션을 눌러 설명을 볼 수 있습니다."
+              >
+                <!-- 페어 지역 -->
+                <path
+                  d="M200 360 L30 190 A240 240 0 0 1 370 190 Z"
+                  fill="#3d8b4a"
+                  fill-opacity="0.16"
+                  stroke="var(--border-strong)"
+                  stroke-width="1.5"
+                />
+                <!-- 내야 -->
+                <path
+                  d="M200 360 L285 275 L200 190 L115 275 Z"
+                  fill="#b5834a"
+                  fill-opacity="0.3"
+                  stroke="var(--border-strong)"
+                  stroke-width="1.5"
+                />
+                <!-- 파울 라인 -->
+                <path
+                  d="M200 360 L30 190 M200 360 L370 190"
+                  stroke="var(--text-faint)"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <!-- 마운드 -->
+                <circle cx="200" cy="275" r="18" fill="#b5834a" fill-opacity="0.55" />
+
+                <!-- 베이스 -->
+                <rect
+                  x="278"
+                  y="268"
+                  width="14"
+                  height="14"
+                  transform="rotate(45 285 275)"
+                  fill="var(--surface)"
+                  stroke="var(--text-faint)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="193"
+                  y="183"
+                  width="14"
+                  height="14"
+                  transform="rotate(45 200 190)"
+                  fill="var(--surface)"
+                  stroke="var(--text-faint)"
+                  stroke-width="1.5"
+                />
+                <rect
+                  x="108"
+                  y="268"
+                  width="14"
+                  height="14"
+                  transform="rotate(45 115 275)"
+                  fill="var(--surface)"
+                  stroke="var(--text-faint)"
+                  stroke-width="1.5"
+                />
+                <polygon
+                  points="192,351 208,351 208,361 200,369 192,361"
+                  fill="var(--surface)"
+                  stroke="var(--text-faint)"
+                  stroke-width="1.5"
+                />
+
+                <!-- 베이스 이름 -->
+                <text class="base-label" x="308" y="279">1루</text>
+                <text class="base-label" x="200" y="176">2루</text>
+                <text class="base-label" x="92" y="279">3루</text>
+
+                <!-- 포지션 -->
+                <g class="pos-node" data-pos="1">
+                  <circle class="pos-hit" cx="200" cy="272" r="15" />
+                  <text class="pos-label" x="200" y="272">1</text>
+                </g>
+                <g class="pos-node" data-pos="2">
+                  <circle class="pos-hit" cx="200" cy="382" r="15" />
+                  <text class="pos-label" x="200" y="382">2</text>
+                </g>
+                <g class="pos-node" data-pos="3">
+                  <circle class="pos-hit" cx="295" cy="256" r="15" />
+                  <text class="pos-label" x="295" y="256">3</text>
+                </g>
+                <g class="pos-node" data-pos="4">
+                  <circle class="pos-hit" cx="252" cy="218" r="15" />
+                  <text class="pos-label" x="252" y="218">4</text>
+                </g>
+                <g class="pos-node" data-pos="5">
+                  <circle class="pos-hit" cx="105" cy="256" r="15" />
+                  <text class="pos-label" x="105" y="256">5</text>
+                </g>
+                <g class="pos-node" data-pos="6">
+                  <circle class="pos-hit" cx="148" cy="218" r="15" />
+                  <text class="pos-label" x="148" y="218">6</text>
+                </g>
+                <g class="pos-node" data-pos="7">
+                  <circle class="pos-hit" cx="95" cy="172" r="15" />
+                  <text class="pos-label" x="95" y="172">7</text>
+                </g>
+                <g class="pos-node" data-pos="8">
+                  <circle class="pos-hit" cx="200" cy="142" r="15" />
+                  <text class="pos-label" x="200" y="142">8</text>
+                </g>
+                <g class="pos-node" data-pos="9">
+                  <circle class="pos-hit" cx="305" cy="172" r="15" />
+                  <text class="pos-label" x="305" y="172">9</text>
+                </g>
+              </svg>
+            </div>
+
+            <div>
+              <div class="diamond__panel" data-diamond-panel aria-live="polite">
+                <p>동그라미를 눌러 포지션 설명을 확인하세요.</p>
+              </div>
+              <div class="diamond__buttons">
+                <button class="btn btn--sm" type="button" data-diamond-step="-1">← 이전</button>
+                <button class="btn btn--sm" type="button" data-diamond-step="1">다음 →</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout--tip">
+            <span class="callout__title">번호를 외울 필요는 없습니다</span>
+            <p>
+              다만 <strong>6-4-3 병살</strong> 같은 표현을 들었을 때 "유격수가 잡아 2루수에게,
+              2루수가 1루수에게 던져 두 명을 잡았다"는 뜻이라는 걸 알면 중계가 훨씬 재밌어집니다.
+            </p>
+          </div>
+
+          <h3>10번째 선수, 지명타자</h3>
+          <p>
+            KBO에는 <strong>지명타자(DH)</strong> 제도가 있습니다. 투수는 던지기만 하고, 대신
+            타석에는 수비를 하지 않는 전문 타자가 들어섭니다. 그래서 실제로 한 경기에 이름을
+            올리는 선수는 수비 9명 + 지명타자 1명입니다.
+          </p>
+        </section>
+
+        <!-- 3. 볼카운트 -->
+        <section id="count">
+          <h2>투수와 타자의 싸움</h2>
+          <p>
+            야구의 모든 장면은 투수가 공을 던지는 것에서 시작합니다. 타자 한 명과의 승부를
+            <strong>타석</strong>이라고 하고, 이 승부는 두 가지 숫자로 진행됩니다.
+          </p>
+
+          <div class="grid grid--2">
+            <div class="card">
+              <h3>스트라이크 3개면 타자가 진다</h3>
+              <p>
+                <strong>스트라이크존</strong>은 홈플레이트 위, 타자의 무릎과 가슴 사이에 있는
+                가상의 네모입니다. 여기를 통과한 공은 타자가 치지 않아도 스트라이크입니다.
+                배트를 휘둘렀는데 맞지 않아도(헛스윙) 스트라이크입니다.
+              </p>
+              <p>스트라이크가 3개가 되면 <strong>삼진 아웃</strong>입니다.</p>
+            </div>
+            <div class="card">
+              <h3>볼 4개면 투수가 진다</h3>
+              <p>
+                스트라이크존을 벗어난 공에 타자가 반응하지 않으면 <strong>볼</strong>입니다.
+                볼이 4개가 되면 <strong>볼넷</strong>이 되어, 타자는 공을 치지 않고도 1루로 걸어
+                나갑니다.
+              </p>
+              <p>그래서 볼카운트는 늘 "볼-스트라이크" 순서로 부릅니다. 2볼 1스트라이크처럼요.</p>
+            </div>
+          </div>
+
+          <div class="sim" data-count-sim>
+            <h3 class="sim__title">볼카운트 시뮬레이터</h3>
+            <p class="sim__hint">
+              아래 버튼을 눌러 공을 하나씩 던져 보세요. 삼진과 볼넷이 어떻게 만들어지는지 보입니다.
+            </p>
+
+            <div class="count-sim">
+              <svg class="zone" viewBox="0 0 200 220" role="img" aria-label="스트라이크존 그림">
+                <!-- 존 -->
+                <rect class="zone__box" x="45" y="30" width="110" height="130" rx="2" />
+                <path
+                  class="zone__grid"
+                  d="M81.7 30 V160 M118.3 30 V160 M45 73.3 H155 M45 116.7 H155"
+                  fill="none"
+                />
+                <!-- 홈플레이트 -->
+                <polygon class="zone__plate" points="70,180 130,180 130,192 100,204 70,192" />
+                <text
+                  x="100"
+                  y="217"
+                  text-anchor="middle"
+                  font-size="11"
+                  fill="var(--text-faint)"
+                  font-family="inherit"
+                >
+                  홈플레이트
+                </text>
+                <!-- 공 -->
+                <circle class="zone__pitch" data-count-pitch cx="100" cy="95" r="9" />
+              </svg>
+
+              <div class="count-board">
+                <div class="count-row">
+                  <span class="count-row__label">볼 (B)</span>
+                  <div class="count-lamps">
+                    <span class="lamp" data-kind="ball"></span>
+                    <span class="lamp" data-kind="ball"></span>
+                    <span class="lamp" data-kind="ball"></span>
+                    <span class="lamp" data-kind="ball"></span>
+                  </div>
+                </div>
+                <div class="count-row">
+                  <span class="count-row__label">스트라이크 (S)</span>
+                  <div class="count-lamps">
+                    <span class="lamp" data-kind="strike"></span>
+                    <span class="lamp" data-kind="strike"></span>
+                    <span class="lamp" data-kind="strike"></span>
+                  </div>
+                </div>
+                <div class="count-row">
+                  <span class="count-row__label">아웃 (O)</span>
+                  <div class="count-lamps">
+                    <span class="lamp" data-kind="out"></span>
+                    <span class="lamp" data-kind="out"></span>
+                    <span class="lamp" data-kind="out"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim__controls">
+              <button class="btn" type="button" data-count-action="strike">존 통과 (스트라이크)</button>
+              <button class="btn" type="button" data-count-action="ball">존 벗어남 (볼)</button>
+              <button class="btn" type="button" data-count-action="swing">헛스윙</button>
+              <button class="btn" type="button" data-count-action="foul">파울</button>
+              <button class="btn btn--navy" type="button" data-count-action="inplay">배트에 맞음</button>
+              <button class="btn btn--ghost btn--sm" type="button" data-count-action="reset">초기화</button>
+            </div>
+
+            <p class="sim__log" data-count-log aria-live="polite">
+              버튼을 눌러 공을 하나씩 진행해 보세요.
+            </p>
+          </div>
+        </section>
+
+        <!-- 4. 주자와 득점 -->
+        <section id="runners">
+          <h2>주자와 득점</h2>
+          <p>
+            타자가 살아서 베이스에 나가면 <strong>주자</strong>가 됩니다. 주자는 1루 → 2루 → 3루
+            순서로 시계 반대 방향으로 돌아, 출발점인 홈플레이트로 돌아와야 합니다.
+            <strong>홈을 밟는 순간에만 1점</strong>이 올라갑니다.
+          </p>
+
+          <div class="callout callout--warn">
+            <span class="callout__title">가장 헷갈리는 지점</span>
+            <p>
+              홈런을 제외하면, 공을 잘 쳤다고 바로 점수가 나지 않습니다. 2루타를 쳐도 그 타자는
+              2루에 서 있을 뿐입니다. 점수는 <strong>그 다음 타자들이 밀어줘야</strong> 납니다.
+              그래서 야구는 한 명이 아니라 여러 명이 이어서 만드는 경기입니다.
+            </p>
+          </div>
+
+          <div class="sim" data-baserun>
+            <h3 class="sim__title">주자 진루 시뮬레이터</h3>
+            <p class="sim__hint">
+              타격 결과를 눌러 주자가 어떻게 움직이는지 보세요. 빨간 베이스에 주자가 서 있다는
+              뜻입니다.
+            </p>
+
+            <div class="baserun">
+              <svg
+                class="baserun__svg"
+                viewBox="0 0 240 250"
+                role="img"
+                aria-label="베이스 위 주자 상황"
+              >
+                <path class="base-path" d="M120 210 L185 145 L120 80 L55 145 Z" />
+
+                <rect
+                  class="base-shape"
+                  data-base="1"
+                  x="174"
+                  y="134"
+                  width="22"
+                  height="22"
+                  transform="rotate(45 185 145)"
+                />
+                <rect
+                  class="base-shape"
+                  data-base="2"
+                  x="109"
+                  y="69"
+                  width="22"
+                  height="22"
+                  transform="rotate(45 120 80)"
+                />
+                <rect
+                  class="base-shape"
+                  data-base="3"
+                  x="44"
+                  y="134"
+                  width="22"
+                  height="22"
+                  transform="rotate(45 55 145)"
+                />
+                <polygon
+                  points="110,200 130,200 130,213 120,223 110,213"
+                  fill="var(--bg-sunken)"
+                  stroke="var(--border-strong)"
+                  stroke-width="2"
+                />
+
+                <text class="base-label" x="212" y="150">1루</text>
+                <text class="base-label" x="120" y="58">2루</text>
+                <text class="base-label" x="28" y="150">3루</text>
+                <text class="base-label" x="120" y="242">홈 — 여기를 밟아야 1점</text>
+              </svg>
+
+              <div>
+                <div class="score-tally">
+                  <div class="score-tally__item">
+                    <span class="score-tally__num" data-baserun-score>0</span>
+                    <span class="score-tally__cap">득점</span>
+                  </div>
+                  <div class="score-tally__item">
+                    <span class="score-tally__num" data-baserun-outs>0</span>
+                    <span class="score-tally__cap">아웃</span>
+                  </div>
+                </div>
+
+                <div class="sim__controls" style="margin-top: 0">
+                  <button class="btn" type="button" data-baserun-action="single">안타</button>
+                  <button class="btn" type="button" data-baserun-action="double">2루타</button>
+                  <button class="btn" type="button" data-baserun-action="triple">3루타</button>
+                  <button class="btn btn--primary" type="button" data-baserun-action="homerun">
+                    홈런
+                  </button>
+                  <button class="btn" type="button" data-baserun-action="walk">볼넷</button>
+                  <button class="btn" type="button" data-baserun-action="sacfly">희생플라이</button>
+                  <button class="btn" type="button" data-baserun-action="out">아웃</button>
+                  <button class="btn btn--ghost btn--sm" type="button" data-baserun-action="reset">
+                    초기화
+                  </button>
+                </div>
+
+                <p class="sim__log" data-baserun-log aria-live="polite">
+                  버튼을 눌러 주자를 움직여 보세요.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <h3>알아두면 좋은 주자 관련 표현</h3>
+          <div class="term-grid">
+            <div class="term">
+              <div class="term__name">만루 <span class="term__abbr">bases loaded</span></div>
+              <p class="term__desc">
+                1·2·3루에 주자가 모두 있는 상태. 안타 하나로 여러 점이 날 수 있어 관중석이 가장
+                뜨거워지는 순간입니다.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">득점권</div>
+              <p class="term__desc">
+                주자가 2루나 3루에 있는 상태. 안타 하나면 홈까지 들어올 수 있는 거리라서 이렇게
+                부릅니다.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">도루 <span class="term__abbr">SB</span></div>
+              <p class="term__desc">
+                주자가 투수가 공을 던지는 사이 다음 베이스로 뛰어 훔치는 것. 성공하면 안타 없이도
+                득점권까지 갑니다.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">병살 <span class="term__abbr">double play</span></div>
+              <p class="term__desc">
+                한 번의 타구로 두 명을 한꺼번에 아웃시키는 것. 공격 팀 입장에서는 가장 김빠지는
+                장면입니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 5. 아웃 -->
+        <section id="outs">
+          <h2>아웃되는 방법</h2>
+          <p>수비가 아웃을 잡는 방법은 실질적으로 다섯 가지입니다.</p>
+
+          <div class="table-wrap">
+            <table class="data">
+              <thead>
+                <tr>
+                  <th scope="col">이름</th>
+                  <th scope="col">어떤 상황인가</th>
+                  <th scope="col">경기장에서 보이는 모습</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">삼진</th>
+                  <td>스트라이크 3개를 당함</td>
+                  <td>포수가 공을 잡고, 심판이 크게 팔을 휘두릅니다.</td>
+                </tr>
+                <tr>
+                  <th scope="row">뜬공 아웃</th>
+                  <td>친 공이 땅에 닿기 전에 수비에게 잡힘</td>
+                  <td>야수가 공을 보고 달려가 글러브로 받아냅니다. 파울 지역이어도 잡히면 아웃입니다.</td>
+                </tr>
+                <tr>
+                  <th scope="row">포스 아웃</th>
+                  <td>주자가 반드시 가야 하는 베이스에 공이 먼저 도착함</td>
+                  <td>야수가 베이스를 밟은 채 공을 받습니다. 1루에서 가장 자주 나옵니다.</td>
+                </tr>
+                <tr>
+                  <th scope="row">태그 아웃</th>
+                  <td>베이스를 밟지 않은 주자를 공 든 글러브로 건드림</td>
+                  <td>야수가 주자 몸에 글러브를 대는 장면. 도루 저지가 대표적입니다.</td>
+                </tr>
+                <tr>
+                  <th scope="row">병살</th>
+                  <td>한 타구로 두 명이 연달아 아웃</td>
+                  <td>내야 땅볼 → 2루 → 1루로 공이 빠르게 이어집니다.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="callout">
+            <span class="callout__title">포스 아웃과 태그 아웃, 왜 다른가</span>
+            <p>
+              뒤에서 주자가 밀고 들어와 <strong>반드시 다음 베이스로 가야만 하는 상황</strong>이면
+              태그할 필요 없이 베이스만 밟으면 아웃입니다(포스 아웃). 반대로 갈 의무가 없는
+              주자는 반드시 몸에 태그해야 아웃입니다.
+            </p>
+            <p>
+              타자가 공을 치면 1루 주자는 무조건 2루로 가야 하니 포스, 2루에만 주자가 있으면
+              3루로 갈 의무가 없으니 태그. 이 차이 하나가 병살이 되느냐 마느냐를 가릅니다.
+            </p>
+          </div>
+        </section>
+
+        <!-- 6. 전광판 -->
+        <section id="scoreboard">
+          <h2>전광판 읽는 법</h2>
+          <p>
+            경기장에 앉으면 가장 먼저 익숙해져야 할 것이 전광판입니다.
+            <strong>아래 설명을 누르면 전광판에서 해당하는 칸이 표시됩니다.</strong>
+          </p>
+
+          <div data-scoreboard>
+            <div class="scoreboard-wrap">
+              <table class="scoreboard">
+                <caption class="visually-hidden">
+                  7회초 진행 중인 경기 전광판 예시
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col" data-sb-cell="team">팀</th>
+                    <th scope="col" data-sb-cell="inning">1</th>
+                    <th scope="col" data-sb-cell="inning">2</th>
+                    <th scope="col" data-sb-cell="inning">3</th>
+                    <th scope="col" data-sb-cell="inning">4</th>
+                    <th scope="col" data-sb-cell="inning">5</th>
+                    <th scope="col" data-sb-cell="inning">6</th>
+                    <th scope="col" data-sb-cell="inning">7</th>
+                    <th scope="col" data-sb-cell="inning">8</th>
+                    <th scope="col" data-sb-cell="inning">9</th>
+                    <th scope="col" data-sb-cell="r">R</th>
+                    <th scope="col" data-sb-cell="h">H</th>
+                    <th scope="col" data-sb-cell="e">E</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="team-cell" data-sb-cell="team">롯데</th>
+                    <td data-sb-cell="inning">0</td>
+                    <td data-sb-cell="inning">1</td>
+                    <td data-sb-cell="inning">0</td>
+                    <td data-sb-cell="inning">0</td>
+                    <td data-sb-cell="inning">2</td>
+                    <td data-sb-cell="inning">0</td>
+                    <td data-sb-cell="inning">·</td>
+                    <td data-sb-cell="inning"></td>
+                    <td data-sb-cell="inning"></td>
+                    <td class="total-cell" data-sb-cell="r">3</td>
+                    <td class="total-cell" data-sb-cell="h">7</td>
+                    <td class="total-cell" data-sb-cell="e">0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="team-cell" data-sb-cell="team">두산</th>
+                    <td data-sb-cell="inning">0</td>
+                    <td data-sb-cell="inning">0</td>
+                    <td data-sb-cell="inning">1</td>
+                    <td data-sb-cell="inning">0</td>
+                    <td data-sb-cell="inning">0</td>
+                    <td data-sb-cell="inning">1</td>
+                    <td data-sb-cell="inning"></td>
+                    <td data-sb-cell="inning"></td>
+                    <td data-sb-cell="inning"></td>
+                    <td class="total-cell" data-sb-cell="r">2</td>
+                    <td class="total-cell" data-sb-cell="h">5</td>
+                    <td class="total-cell" data-sb-cell="e">1</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="team-cell" data-sb-cell="count">B S O</th>
+                    <td colspan="12" data-sb-cell="count">2 볼 &nbsp;·&nbsp; 1 스트라이크 &nbsp;·&nbsp; 1 아웃</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p class="sim__log" data-sb-explain aria-live="polite" style="margin-top: 0">
+              설명 항목을 누르면 전광판에서 해당하는 칸이 표시됩니다.
+            </p>
+
+            <ul class="sb-legend" style="margin-top: var(--sp-4)">
+              <li>
+                <button
+                  class="btn btn--sm btn--block"
+                  type="button"
+                  data-sb-key="team"
+                  data-sb-explain="위가 원정팀, 아래가 홈팀입니다. 8월 22일 잠실에서는 롯데가 위, 두산이 아래에 표시됩니다."
+                >
+                  팀 이름 위치
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn btn--sm btn--block"
+                  type="button"
+                  data-sb-key="inning"
+                  data-sb-explain="이닝별로 그 회에 몇 점을 냈는지 보여줍니다. 예시에서는 롯데가 2회에 1점, 5회에 2점을 냈습니다. 빈 칸은 아직 하지 않은 이닝입니다."
+                >
+                  이닝별 점수
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn btn--sm btn--block"
+                  type="button"
+                  data-sb-key="r"
+                  data-sb-explain="R은 Run, 총 득점입니다. 경기가 끝났을 때 이 숫자가 큰 팀이 이깁니다. 딱 하나만 봐야 한다면 이 칸입니다."
+                >
+                  R — 득점
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn btn--sm btn--block"
+                  type="button"
+                  data-sb-key="h"
+                  data-sb-explain="H는 Hit, 안타 개수입니다. 안타가 많은데 점수가 적으면 기회를 살리지 못했다는 뜻입니다."
+                >
+                  H — 안타
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn btn--sm btn--block"
+                  type="button"
+                  data-sb-key="e"
+                  data-sb-explain="E는 Error, 수비 실책입니다. 잡았어야 할 공을 놓친 횟수라서, 이 숫자가 올라가면 해당 팀 응원석이 조용해집니다."
+                >
+                  E — 실책
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn btn--sm btn--block"
+                  type="button"
+                  data-sb-key="count"
+                  data-sb-explain="지금 이 순간의 볼·스트라이크·아웃 개수입니다. 실시간으로 계속 바뀌며, 아웃이 2면 이 타자만 잡으면 공수교대라는 뜻입니다."
+                >
+                  B / S / O — 현재 상황
+                </button>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 7. 헷갈리는 규칙 -->
+        <section id="confusing">
+          <h2>헷갈리는 규칙</h2>
+          <p>
+            처음 보면 "지금 왜 저렇게 됐지?" 싶은 장면들입니다. 지금 다 외울 필요는 없고, 경기장에서
+            비슷한 일이 생기면 돌아와서 찾아보세요.
+          </p>
+
+          <div class="accordion">
+            <details>
+              <summary>인필드 플라이 — 왜 안 잡았는데 아웃이지?</summary>
+              <div class="accordion__body">
+                <p>
+                  주자가 1·2루 이상 차 있고 아웃이 2개 미만일 때, 내야에 평범한 뜬공이 뜨면 심판이
+                  즉시 <strong>타자 아웃</strong>을 선언합니다. 공을 잡든 못 잡든 관계없습니다.
+                </p>
+                <p>
+                  수비가 일부러 공을 떨어뜨려 주자들을 한꺼번에 잡는 얌체 플레이를 막기 위한
+                  규칙입니다. 공격 팀을 보호하는 장치라고 생각하면 됩니다.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>낫아웃 — 삼진인데 왜 뛰지?</summary>
+              <div class="accordion__body">
+                <p>
+                  세 번째 스트라이크를 포수가 <strong>깨끗하게 잡지 못하면</strong>, 타자는 아직
+                  아웃이 아닙니다. 1루로 뛸 수 있고, 포수보다 먼저 도착하면 살아납니다.
+                </p>
+                <p>
+                  삼진을 당하고도 1루에 나가 있는 이상한 장면이 여기서 나옵니다. 투수 기록에는
+                  삼진이 올라가지만 아웃 카운트는 늘지 않습니다.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>보크 — 투수가 뭘 잘못한 거지?</summary>
+              <div class="accordion__body">
+                <p>
+                  주자가 있을 때 투수가 규칙에 어긋나는 속임 동작을 하면 보크입니다. 던지려다
+                  멈추거나, 발 위치가 규정과 다르거나 하는 경우입니다.
+                </p>
+                <p>
+                  선언되면 <strong>모든 주자가 공짜로 한 베이스씩 진루</strong>합니다. 3루에
+                  주자가 있었다면 그냥 1점이 들어갑니다. 관중 입장에서는 갑자기 상황이 바뀌어
+                  당황스러운 장면입니다.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>파울과 파울팁 — 뭐가 다른가</summary>
+              <div class="accordion__body">
+                <p>
+                  <strong>파울</strong>은 친 공이 파울 지역으로 간 것입니다. 스트라이크 하나로
+                  세지만, 이미 2스트라이크라면 더 늘지 않습니다.
+                </p>
+                <p>
+                  <strong>파울팁</strong>은 배트를 살짝 스친 공이 곧바로 포수 미트에 들어간
+                  경우입니다. 이건 그냥 스트라이크로 처리되며, 2스트라이크였다면
+                  <strong>삼진</strong>이 됩니다. 소리는 비슷한데 결과가 정반대라 헷갈립니다.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>번트 — 왜 일부러 아웃을 당하지?</summary>
+              <div class="accordion__body">
+                <p>
+                  배트를 휘두르지 않고 갖다 대 공을 짧게 굴리는 것이 번트입니다. 타자는 아웃될
+                  가능성이 높지만, 그 사이 <strong>주자를 한 베이스 더 보낼 수 있습니다.</strong>
+                </p>
+                <p>
+                  자기를 희생해 주자를 진루시킨다고 해서 희생번트라고 부릅니다. 다만 2스트라이크
+                  상황에서 번트를 대다 파울이 나면 그대로 삼진이니 주의해서 보세요.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>선수 교체 — 한 번 나가면 못 돌아온다</summary>
+              <div class="accordion__body">
+                <p>
+                  야구는 축구·농구와 달리 <strong>교체되어 나간 선수는 다시 들어올 수 없습니다.</strong>
+                  그래서 감독은 대타나 투수 교체 타이밍을 아주 신중하게 고릅니다.
+                </p>
+                <p>
+                  경기 후반에 갑자기 낯선 이름이 나오면 대타(타격 전문)나 대주자(발이 빠른 선수)일
+                  가능성이 높습니다.
+                </p>
+              </div>
+            </details>
+
+            <details>
+              <summary>비가 오면 어떻게 되나</summary>
+              <div class="accordion__body">
+                <p>
+                  비가 심하면 경기가 중단되고, 그래도 안 되면 취소됩니다. 잠실야구장은 지붕이 없는
+                  야외 구장이라 8월에는 비 예보를 꼭 확인해야 합니다.
+                </p>
+                <p>
+                  <strong>5회를 마치기 전에 취소되면</strong> 경기 자체가 없던 일이 되고 나중에 다시
+                  치릅니다. 티켓은 대개 환불되거나 다른 날 경기로 교환되니, 당일 구단 공지를
+                  확인하세요.
+                </p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 8. 기록 용어 -->
+        <section id="stats">
+          <h2>최소한의 기록 용어</h2>
+          <p>
+            중계나 전광판에 나오는 숫자들입니다. 다 알 필요는 없고, 아래 정도만 알면 대화를
+            따라갈 수 있습니다.
+          </p>
+
+          <h3>타자를 보는 숫자</h3>
+          <div class="term-grid">
+            <div class="term">
+              <div class="term__name">타율 <span class="term__abbr">AVG</span></div>
+              <p class="term__desc">
+                안타 ÷ 타수. 3할(0.300)이면 아주 잘 치는 타자입니다. 열 번 나와 세 번 치면 최상급인
+                것이 야구입니다.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">홈런 <span class="term__abbr">HR</span></div>
+              <p class="term__desc">
+                담장을 넘긴 타구. 친 타자와 나가 있던 주자가 전부 홈을 밟습니다. 한 번에 최대 4점.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">타점 <span class="term__abbr">RBI</span></div>
+              <p class="term__desc">
+                자기 타격으로 홈을 밟게 만든 주자 수. 팀에 실제로 보탠 점수라서 중요하게 봅니다.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">출루율 <span class="term__abbr">OBP</span></div>
+              <p class="term__desc">
+                안타든 볼넷이든 <em>어떻게든 살아 나간</em> 비율. 4할이면 훌륭합니다.
+              </p>
+            </div>
+          </div>
+
+          <h3>투수를 보는 숫자</h3>
+          <div class="term-grid">
+            <div class="term">
+              <div class="term__name">평균자책점 <span class="term__abbr">ERA</span></div>
+              <p class="term__desc">
+                9이닝당 내준 점수. <strong>낮을수록 좋습니다.</strong> 3점대면 좋은 투수, 2점대면
+                최상급입니다.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">승 · 패 <span class="term__abbr">W / L</span></div>
+              <p class="term__desc">
+                이긴 경기와 진 경기에 붙는 기록. 팀 타선이 도와줘야 붙는 기록이라 투수 실력을
+                온전히 보여주지는 않습니다.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">세이브 <span class="term__abbr">SV</span></div>
+              <p class="term__desc">
+                아슬아슬하게 이기고 있는 상황을 마지막에 지켜냈을 때 붙습니다. 이 역할을 맡는
+                투수를 마무리라고 부릅니다.
+              </p>
+            </div>
+            <div class="term">
+              <div class="term__name">탈삼진 <span class="term__abbr">SO / K</span></div>
+              <p class="term__desc">
+                삼진으로 잡아낸 타자 수. 관중석에서 가장 큰 환호가 나오는 기록입니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 퀴즈 -->
+        <section id="quiz">
+          <h2>확인 퀴즈</h2>
+          <p>여기까지 읽었으면 풀어보세요. 틀려도 해설이 나오니 부담 없이 눌러도 됩니다.</p>
+          <div class="quiz" data-quiz="rules"></div>
+        </section>
+
+        <nav class="next-nav" aria-label="페이지 이동">
+          <a class="btn" href="index.html">← 홈</a>
+          <a class="btn btn--primary" href="kbo.html">2단계. KBO 리그와 10개 구단 →</a>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <ul class="site-footer__links">
+          <li><a href="index.html">홈</a></li>
+          <li><a href="rules.html">규칙</a></li>
+          <li><a href="kbo.html">KBO 리그</a></li>
+          <li><a href="lotte.html">롯데</a></li>
+          <li><a href="jamsil.html">직관 가이드</a></li>
+        </ul>
+        <p>야구를 처음 보는 사람을 위해 만든 개인 학습 자료입니다.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/nav.js"></script>
+    <script type="module" src="assets/js/diamond.js"></script>
+    <script type="module" src="assets/js/count.js"></script>
+    <script type="module" src="assets/js/baserun.js"></script>
+    <script type="module" src="assets/js/scoreboard.js"></script>
+    <script type="module" src="assets/js/quiz.js"></script>
+  </body>
+</html>
