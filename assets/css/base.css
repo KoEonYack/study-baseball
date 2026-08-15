@@ -409,6 +409,11 @@ section {
   margin: 0;
 }
 
+/* 안내 문구가 없는 페이지에서 아래쪽 여백이 뜨지 않도록 */
+.site-footer .wrap > :last-child {
+  margin-bottom: 0;
+}
+
 /* ---------- 페이지 헤드 ---------- */
 
 .page-head {
