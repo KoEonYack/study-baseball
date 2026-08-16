@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>롯데 자이언츠 선수단 — 야구 첫걸음</title>
+    <meta
+      name="description"
+      content="2026 시즌 롯데 자이언츠 선수단. 어느 자리에 누가 나오는지, 경기장에서 누구를 눈여겨보면 되는지 야구 초심자 눈높이로 정리했습니다."
+    />
+    <meta name="theme-color" content="#041e42" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><circle cx='12' cy='12' r='11' fill='%23fff'/><path d='M5.5 4.5Q9 12 5.5 19.5M18.5 4.5Q15 12 18.5 19.5' stroke='%23d00f31' stroke-width='1.6' fill='none'/></svg>"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+    <div class="progress-bar" data-progress></div>
+
+    <header class="site-header">
+      <div class="site-header__bar">
+        <a class="site-header__logo" href="index.html">
+          <svg class="site-header__ball" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="11" fill="#fff" />
+            <path
+              d="M5.5 4.5Q9 12 5.5 19.5M18.5 4.5Q15 12 18.5 19.5"
+              stroke="#d00f31"
+              stroke-width="1.6"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+          야구 첫걸음
+        </a>
+        <button
+          class="site-nav__toggle"
+          type="button"
+          data-nav-toggle
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          메뉴
+        </button>
+        <nav class="site-nav" id="site-nav" data-nav aria-label="주요 메뉴">
+          <ul class="site-nav__list">
+            <li><a href="rules.html">규칙</a></li>
+            <li><a href="kbo.html">KBO 리그</a></li>
+            <li><a href="lotte.html">롯데</a></li>
+            <li><a href="players.html">선수단</a></li>
+            <li><a href="jamsil.html">직관 가이드</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <div class="page-head">
+        <div class="wrap">
+          <span class="page-head__step">보너스</span>
+          <h1>롯데 자이언츠 선수단</h1>
+          <p class="page-head__lead">
+            8월 22일 경기장에서 보게 될 사람들입니다. 이름을 다 외울 필요는 없고, 어느 자리에
+            누가 서는지만 알아도 경기가 훨씬 재밌어집니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="callout callout--warn">
+          <span class="callout__title">먼저 알아둘 것 — 그날 누가 나올지는 아직 아무도 모릅니다</span>
+          <p>
+            야구는 <strong>경기 시작 1~2시간 전에야 그날의 선발 라인업이 공개</strong>됩니다.
+            선발 투수도, 타순도 그때 정해집니다. 그래서 "8월 22일에 출전하는 선수"를 지금
+            확정해서 알려드리는 것은 불가능합니다.
+          </p>
+          <p>
+            대신 이 페이지에는 <strong>2026 시즌에 실제로 뛰고 있는 선수들</strong>과, 각 자리에
+            주로 나오는 사람을 정리했습니다. 당일 라인업은 아래 방법으로 확인하세요.
+          </p>
+        </div>
+
+        <nav class="toc" aria-label="목차">
+          <h2>이 페이지에서 다루는 것</h2>
+          <ol>
+            <li><a href="#status">지금 팀 상황</a></li>
+            <li><a href="#positions">어느 자리에 누가 나오나</a></li>
+            <li><a href="#pitchers">투수는 역할이 나뉘어 있습니다</a></li>
+            <li><a href="#watch">이 선수만 알아도 됩니다</a></li>
+            <li><a href="#roster">전체 명단</a></li>
+            <li><a href="#lineup-day">당일 라인업 확인하는 법</a></li>
+          </ol>
+        </nav>
+
+        <!-- 팀 상황 -->
+        <section id="status">
+          <h2>지금 팀 상황</h2>
+          <p>
+            응원하러 가기 전에 팀이 어떤 상태인지는 알고 가는 편이 좋습니다. 솔직하게 말씀드리면
+            <strong>올해는 쉽지 않은 시즌</strong>입니다.
+          </p>
+
+          <div class="status-grid">
+            <div class="status-cell">
+              <span class="status-cell__cap">감독</span>
+              <span class="status-cell__val" data-status="manager">—</span>
+            </div>
+            <div class="status-cell">
+              <span class="status-cell__cap">순위 (10개 구단 중)</span>
+              <span class="status-cell__val" data-status="rank">—</span>
+            </div>
+            <div class="status-cell">
+              <span class="status-cell__cap">성적</span>
+              <span class="status-cell__val" data-status="record">—</span>
+            </div>
+            <div class="status-cell">
+              <span class="status-cell__cap">승률</span>
+              <span class="status-cell__val" data-status="winRate">—</span>
+            </div>
+          </div>
+
+          <p class="term__desc">
+            <span data-status="asOf">—</span> 기준 · <span data-status="played">—</span> 치른 시점
+          </p>
+
+          <div class="callout">
+            <span class="callout__title">그래도 가는 이유</span>
+            <p>
+              8위면 <a href="kbo.html#postseason">가을야구</a>에 나가는 5위와는 거리가 있습니다.
+              하지만 롯데 응원석은 순위와 상관없이 채워집니다. 팀이 몇 위든 부산 갈매기는
+              똑같이 부릅니다. 그게 이 팀 팬 문화의 핵심이기도 합니다.
+            </p>
+            <p>
+              오히려 처음 가는 사람에게는 순위 압박이 없는 경기가 편할 수 있습니다. 결과보다
+              분위기를 즐기고 오시면 됩니다.
+            </p>
+          </div>
+        </section>
+
+        <!-- 포지션별 -->
+        <section id="positions">
+          <h2>어느 자리에 누가 나오나</h2>
+          <p>
+            <a href="rules.html#positions">규칙 편에서 배운 포지션 9자리</a>에 실제 선수를 얹었습니다.
+            <strong>동그라미를 눌러보세요.</strong>
+          </p>
+
+          <div class="diamond" data-lineup>
+            <div class="diamond__field">
+              <svg
+                class="diamond__svg"
+                viewBox="0 0 400 430"
+                role="img"
+                aria-label="롯데 자이언츠 포지션별 선수 배치도. 각 포지션을 눌러 선수를 볼 수 있습니다."
+              >
+                <path
+                  d="M200 360 L30 190 A240 240 0 0 1 370 190 Z"
+                  fill="#3d8b4a"
+                  fill-opacity="0.16"
+                  stroke="var(--border-strong)"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M200 360 L285 275 L200 190 L115 275 Z"
+                  fill="#b5834a"
+                  fill-opacity="0.3"
+                  stroke="var(--border-strong)"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M200 360 L30 190 M200 360 L370 190"
+                  stroke="var(--text-faint)"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <circle cx="200" cy="275" r="18" fill="#b5834a" fill-opacity="0.55" />
+
+                <rect x="278" y="268" width="14" height="14" transform="rotate(45 285 275)" fill="var(--surface)" stroke="var(--text-faint)" stroke-width="1.5" />
+                <rect x="193" y="183" width="14" height="14" transform="rotate(45 200 190)" fill="var(--surface)" stroke="var(--text-faint)" stroke-width="1.5" />
+                <rect x="108" y="268" width="14" height="14" transform="rotate(45 115 275)" fill="var(--surface)" stroke="var(--text-faint)" stroke-width="1.5" />
+                <polygon points="192,351 208,351 208,361 200,369 192,361" fill="var(--surface)" stroke="var(--text-faint)" stroke-width="1.5" />
+
+                <g class="pos-node" data-lineup-pos="8">
+                  <circle class="pos-hit" cx="200" cy="142" r="15" />
+                  <text class="pos-label" x="200" y="142">8</text>
+                  <text class="lineup-name" x="200" y="172" data-lineup-name="8"></text>
+                </g>
+                <g class="pos-node" data-lineup-pos="7">
+                  <circle class="pos-hit" cx="95" cy="185" r="15" />
+                  <text class="pos-label" x="95" y="185">7</text>
+                  <text class="lineup-name" x="95" y="215" data-lineup-name="7"></text>
+                </g>
+                <g class="pos-node" data-lineup-pos="9">
+                  <circle class="pos-hit" cx="305" cy="185" r="15" />
+                  <text class="pos-label" x="305" y="185">9</text>
+                  <text class="lineup-name" x="305" y="215" data-lineup-name="9"></text>
+                </g>
+                <g class="pos-node" data-lineup-pos="6">
+                  <circle class="pos-hit" cx="145" cy="235" r="15" />
+                  <text class="pos-label" x="145" y="235">6</text>
+                  <text class="lineup-name" x="140" y="265" data-lineup-name="6"></text>
+                </g>
+                <g class="pos-node" data-lineup-pos="4">
+                  <circle class="pos-hit" cx="255" cy="235" r="15" />
+                  <text class="pos-label" x="255" y="235">4</text>
+                  <text class="lineup-name" x="262" y="265" data-lineup-name="4"></text>
+                </g>
+                <g class="pos-node" data-lineup-pos="5">
+                  <circle class="pos-hit" cx="100" cy="290" r="15" />
+                  <text class="pos-label" x="100" y="290">5</text>
+                  <text class="lineup-name" x="92" y="320" data-lineup-name="5"></text>
+                </g>
+                <g class="pos-node" data-lineup-pos="3">
+                  <circle class="pos-hit" cx="300" cy="290" r="15" />
+                  <text class="pos-label" x="300" y="290">3</text>
+                  <text class="lineup-name" x="308" y="320" data-lineup-name="3"></text>
+                </g>
+                <g class="pos-node" data-lineup-pos="1">
+                  <circle class="pos-hit" cx="200" cy="275" r="15" />
+                  <text class="pos-label" x="200" y="275">1</text>
+                  <text class="lineup-name" x="200" y="305" data-lineup-name="1"></text>
+                </g>
+                <g class="pos-node" data-lineup-pos="2">
+                  <circle class="pos-hit" cx="200" cy="388" r="15" />
+                  <text class="pos-label" x="200" y="388">2</text>
+                  <text class="lineup-name" x="200" y="418" data-lineup-name="2"></text>
+                </g>
+              </svg>
+            </div>
+
+            <div>
+              <div class="diamond__panel" data-lineup-panel aria-live="polite">
+                <p>동그라미를 눌러 그 자리에 나오는 선수를 확인하세요.</p>
+              </div>
+              <div class="diamond__buttons">
+                <button class="btn btn--sm" type="button" data-lineup-pos="dh">
+                  지명타자도 보기 →
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="callout callout--tip">
+            <span class="callout__title">한 자리에 여러 명이 적혀 있는 이유</span>
+            <p>
+              선수는 부상·컨디션·상대 투수에 따라 계속 바뀝니다. 특히 3루수처럼 주인이 확실치
+              않은 자리는 경기마다 다른 사람이 나옵니다.
+              <strong>여기 적힌 이름은 "요즘 이 자리에 자주 나오는 사람"</strong> 정도로 보시면
+              됩니다.
+            </p>
+          </div>
+        </section>
+
+        <!-- 투수 -->
+        <section id="pitchers">
+          <h2>투수는 역할이 나뉘어 있습니다</h2>
+          <p>
+            초심자가 가장 헷갈리는 부분입니다. 투수는 다 같은 투수가 아니라
+            <strong>맡은 구간이 정해져 있습니다.</strong> 한 경기에 보통 4~6명이 이어 던집니다.
+          </p>
+
+          <div class="role-card">
+            <h3>선발 — 경기를 여는 투수</h3>
+            <p>
+              <strong>제레미 비슬리 · 엘빈 로드리게스 · 나균안 · 김진욱 · 박세웅</strong><br />
+              다섯 명이 순서대로 돌아가며 1회부터 던집니다. 보통 5~6이닝까지 책임집니다.
+              비슬리와 로드리게스는 2026년에 새로 온 외국인 투수로, 둘 다 평균 150km 안팎의
+              빠른 공을 던집니다.
+            </p>
+          </div>
+
+          <div class="role-card">
+            <h3>셋업 — 7~8회를 막는 투수</h3>
+            <p>
+              <strong>최준용 · 이이무라 쇼타</strong><br />
+              선발이 내려간 뒤 경기 후반을 지킵니다. 이이무라 쇼타는 아시아 쿼터로 합류한
+              일본인 투수입니다.
+            </p>
+          </div>
+
+          <div class="role-card">
+            <h3>마무리 — 9회를 끝내는 투수</h3>
+            <p>
+              <strong>김원중</strong><br />
+              이기고 있는 경기의 마지막을 책임집니다. <strong>이 선수가 나오면 경기가
+              끝나간다는 뜻</strong>이라, 등장 음악이 나올 때 응원석이 가장 긴장합니다.
+            </p>
+          </div>
+
+          <div class="role-card">
+            <h3>그 외 불펜</h3>
+            <p>
+              <strong>구승민 · 정철원 · 한현희 · 현도훈 · 박정민</strong><br />
+              상황에 따라 중간에 나옵니다. 현도훈과 박정민은 2026년에 생애 첫 올스타로
+              뽑혔습니다.
+            </p>
+          </div>
+
+          <div class="callout">
+            <span class="callout__title">투수가 바뀌면 왜 시간이 걸리나</span>
+            <p>
+              새 투수가 마운드에 올라오면 연습 투구를 몇 개 던집니다. 그래서 교체 때마다 경기가
+              몇 분씩 멈춥니다. 이때가 화장실에 다녀오기 좋은 두 번째 타이밍입니다. 첫 번째는
+              <a href="jamsil.html#timeline">5회말 뒤 클리닝타임</a>입니다.
+            </p>
+          </div>
+        </section>
+
+        <!-- 주목할 선수 -->
+        <section id="watch">
+          <h2>이 선수만 알아도 됩니다</h2>
+          <p>
+            60명 넘는 이름을 다 외울 수는 없습니다. 처음 가는 경기라면 아래 다섯 명만 기억해도
+            충분합니다.
+          </p>
+
+          <div class="grid grid--2">
+            <div class="card" style="border-top: 4px solid var(--brand)">
+              <h3>전준우 <span class="badge">등번호 8</span></h3>
+              <p>
+                팀의 최고참이자 상징적인 타자입니다. 주로 <strong>지명타자</strong>로 나와
+                타격만 합니다.
+              </p>
+              <p class="term__desc">
+                오래 롯데에 있었던 선수라 이름이 불리면 응원석 반응이 다릅니다. 롯데 팬이
+                되기로 하셨다면 이 이름은 알아두시는 게 좋습니다.
+              </p>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--brand)">
+              <h3>황성빈 <span class="badge">등번호 0</span></h3>
+              <p>
+                발이 빠른 <strong>중견수</strong>. 2026년 올스타에 뽑혔습니다. 주로 1번 타자로
+                나와 경기의 물꼬를 틉니다.
+              </p>
+              <p class="term__desc">
+                이 선수가 1루에 나가면 볼거리가 생깁니다. 도루를 노리니 상대 투수가 자꾸
+                견제구를 던지고, 그때마다 <strong>"마!"</strong> 구호가 터집니다.
+              </p>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--brand)">
+              <h3>빅터 레이예스 <span class="badge">등번호 29</span></h3>
+              <p>
+                3년째 롯데에서 뛰는 외국인 타자. <strong>좌익수</strong>로 나오며 타선의 중심을
+                맡습니다.
+              </p>
+              <p class="term__desc">
+                외국인 타자는 팀에 한 명뿐이라 이름을 기억하기 쉽습니다. 중요한 순간에 타석에
+                들어서는 일이 많습니다.
+              </p>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--brand)">
+              <h3>윤동희 <span class="badge">등번호 91</span></h3>
+              <p>
+                팀이 오래 기대를 걸어온 젊은 <strong>우익수</strong>입니다.
+              </p>
+              <p class="term__desc">
+                3루 응원석에서 보면 그라운드 건너편 오른쪽에 서 있습니다. 외야로 뜬공이 가면
+                누가 잡으러 가는지 눈으로 따라가 보세요.
+              </p>
+            </div>
+
+            <div class="card" style="border-top: 4px solid var(--brand)">
+              <h3>김원중 <span class="badge">등번호 34</span></h3>
+              <p>
+                <strong>마무리 투수</strong>. 이기고 있는 9회에만 나옵니다.
+              </p>
+              <p class="term__desc">
+                이 선수가 마운드에 오르면 "이제 곧 끝나겠구나" 하고 아시면 됩니다. 반대로
+                지고 있으면 나오지 않습니다.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3>이름을 모를 때는</h3>
+              <p>
+                타자가 들어설 때마다 <strong>전광판에 이름과 등번호가 뜹니다.</strong> 응원가도
+                선수마다 달라서, 몇 이닝만 지나면 자연히 몇 명은 외워집니다.
+              </p>
+              <p class="term__desc">굳이 미리 외우려고 애쓰지 않으셔도 됩니다.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 전체 명단 -->
+        <section id="roster">
+          <h2>전체 명단</h2>
+          <p>
+            공식 홈페이지에 등록된 등번호 기준입니다.
+            <span class="badge badge--brand">빨간 표시</span>는 위에서 다룬 선수입니다.
+          </p>
+
+          <div data-roster-root>
+            <div class="roster-group" data-roster-group>
+              <div class="roster-group__head">
+                <h3>투수</h3>
+                <span class="badge" data-roster-count></span>
+              </div>
+              <ul class="roster-list" data-roster="투수"></ul>
+            </div>
+
+            <div class="roster-group" data-roster-group>
+              <div class="roster-group__head">
+                <h3>포수</h3>
+                <span class="badge" data-roster-count></span>
+              </div>
+              <ul class="roster-list" data-roster="포수"></ul>
+            </div>
+
+            <div class="roster-group" data-roster-group>
+              <div class="roster-group__head">
+                <h3>야수 (내야수 · 외야수)</h3>
+                <span class="badge" data-roster-count></span>
+              </div>
+              <ul class="roster-list" data-roster="야수"></ul>
+            </div>
+          </div>
+
+          <div class="callout">
+            <span class="callout__title">내야수와 외야수를 왜 나눠 적지 않았나</span>
+            <p>
+              공식 홈페이지의 포지션 표기와 실제 경기 출전 위치가 서로 맞지 않는 선수들이
+              있었습니다. 확인되지 않은 것을 그럴듯하게 적는 것보다 비워두는 편이 낫다고
+              판단했습니다. 실제 수비 위치는 위
+              <a href="#positions">어느 자리에 누가 나오나</a>에서, 그날의 정확한 배치는 경기
+              당일 라인업에서 확인하세요.
+            </p>
+          </div>
+        </section>
+
+        <!-- 당일 라인업 -->
+        <section id="lineup-day">
+          <h2>당일 라인업 확인하는 법</h2>
+          <p>
+            8월 22일 오후 5~6시쯤이면 그날 나올 선수 9명과 타순, 선발 투수가 공개됩니다.
+            아래 중 아무 데서나 보시면 됩니다.
+          </p>
+
+          <div class="grid grid--3">
+            <div class="card">
+              <h3>경기장 전광판</h3>
+              <p>
+                입장해서 자리에 앉아 있으면 경기 시작 전에 전광판에 라인업이 뜨고 선수 소개가
+                진행됩니다. 가장 확실한 방법입니다.
+              </p>
+            </div>
+            <div class="card">
+              <h3>구단 공식 채널</h3>
+              <p>
+                <a href="https://www.giantsclub.com" target="_blank" rel="noopener noreferrer"
+                  >롯데 자이언츠 공식 홈페이지</a
+                >와 구단 앱·SNS에 경기 전 라인업이 올라옵니다.
+              </p>
+            </div>
+            <div class="card">
+              <h3>KBO 공식 사이트</h3>
+              <p>
+                <a href="https://www.koreabaseball.com" target="_blank" rel="noopener noreferrer"
+                  >KBO 공식 사이트</a
+                >에서 그날 모든 경기의 라인업과 실시간 상황을 볼 수 있습니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="callout callout--warn">
+            <span class="callout__title">이 페이지의 정보는 언제든 바뀔 수 있습니다</span>
+            <p>
+              선수단은 트레이드, 부상, 2군 이동으로 시즌 중에도 계속 변합니다. 이 페이지는
+              <strong><span data-status="asOf">—</span> 기준</strong>으로 정리한 것이고, 순위와
+              성적은 매 경기 달라집니다.
+            </p>
+            <p>
+              <strong>가장 정확한 정보는 언제나 위의 공식 채널</strong>입니다. 여기 적힌 것과
+              다르면 공식 채널이 맞습니다.
+            </p>
+          </div>
+        </section>
+
+        <nav class="next-nav" aria-label="페이지 이동">
+          <a class="btn" href="lotte.html">← 롯데 자이언츠</a>
+          <a class="btn btn--primary" href="jamsil.html">잠실 직관 가이드 →</a>
+        </nav>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <ul class="site-footer__links">
+          <li><a href="index.html">홈</a></li>
+          <li><a href="rules.html">규칙</a></li>
+          <li><a href="kbo.html">KBO 리그</a></li>
+          <li><a href="lotte.html">롯데</a></li>
+          <li><a href="players.html">선수단</a></li>
+          <li><a href="jamsil.html">직관 가이드</a></li>
+        </ul>
+        <p>
+          선수단과 성적은 <span data-status="asOf">—</span> 기준입니다. 명단은 롯데 자이언츠 공식
+          홈페이지, 포지션은 실제 경기 라인업을 근거로 정리했습니다.
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="assets/js/nav.js"></script>
+    <script type="module" src="assets/js/lineup.js"></script>
+  </body>
+</html>
