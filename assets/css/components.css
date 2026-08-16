@@ -1218,6 +1218,148 @@ table.data tbody tr:nth-child(even) {
   fill: var(--text);
 }
 
+/* ---------- 선수단 ---------- */
+
+.lineup-name {
+  fill: var(--text);
+  font-size: 13px;
+  font-weight: 700;
+  text-anchor: middle;
+  pointer-events: none;
+  font-family: var(--font-sans);
+  paint-order: stroke;
+  stroke: var(--bg-soft);
+  stroke-width: 3.5px;
+  stroke-linejoin: round;
+}
+
+.name-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--sp-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+.name-list li {
+  margin: 0;
+  background: var(--brand-soft);
+  color: var(--brand);
+  border-radius: 999px;
+  padding: var(--sp-1) var(--sp-4);
+  font-size: 0.95rem;
+}
+
+.roster-group {
+  margin-bottom: var(--sp-5);
+}
+
+.roster-group__head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-3);
+}
+
+.roster-group__head h3 {
+  margin: 0;
+}
+
+.roster-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--sp-2);
+  grid-template-columns: repeat(auto-fill, minmax(148px, 1fr));
+}
+
+.roster-item {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-2) var(--sp-3);
+  font-size: 0.9rem;
+}
+
+.roster-item.is-key {
+  border-color: var(--brand);
+  background: var(--brand-soft);
+  font-weight: 700;
+}
+
+.roster-item__no {
+  flex: none;
+  min-width: 2.1em;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-faint);
+  background: var(--bg-sunken);
+  border-radius: 5px;
+  padding: 0.1em 0.3em;
+}
+
+.roster-item.is-key .roster-item__no {
+  color: #fff;
+  background: var(--brand);
+}
+
+.status-grid {
+  display: grid;
+  gap: var(--sp-3);
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-bottom: var(--sp-4);
+}
+
+.status-cell {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--sp-3) var(--sp-4);
+}
+
+.status-cell__cap {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--text-faint);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--sp-1);
+}
+
+.status-cell__val {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.role-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--brand);
+  border-radius: var(--radius);
+  padding: var(--sp-4) var(--sp-5);
+  margin-bottom: var(--sp-3);
+}
+
+.role-card h3 {
+  margin: 0 0 var(--sp-2);
+  font-size: 1rem;
+}
+
+.role-card p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-soft);
+}
+
 /* ---------- 다음 단계 내비 ---------- */
 
 .next-nav {
